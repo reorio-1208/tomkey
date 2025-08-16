@@ -37,7 +37,7 @@
 
         lang2 {
             bindings = <&kp LANG_HANJA>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
         };
 
         lang1 {
