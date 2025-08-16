@@ -79,9 +79,9 @@
         ARROW {
             bindings = <
 &kp LC(W)         &kp LC(LS(TAB))         &kp LG(UP_ARROW)  &kp LC(TAB)              &kp LC(T)                                               &kp LC(NUMBER_1)  &kp LS(LC(HOME))  &kp UP_ARROW    &kp LS(LC(END))  &kp EQUAL
-&kp LS(LG(LEFT))  &kp LA(LG(LEFT_ARROW))  &kp LG(D)         &kp LG(LA(RIGHT_ARROW))  &kp LS(LG(RIGHT))  &trans             &kp SINGLE_QUOTE  &kp SEMI          &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(KP_PLUS)
+&kp LS(LG(LEFT))  &kp LA(LG(LEFT_ARROW))  &kp LG(D)         &kp LG(LA(RIGHT_ARROW))  &kp LS(LG(RIGHT))  &trans             &kp SINGLE_QUOTE  &kp SEMI          &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(EQUAL)
 &kp LA(F4)        &kp LC(PAGE_UP)         &kp LS(LC(T))     &kp LC(PAGE_DOWN)        &kp LA(D)          &trans             &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp HASH        &kp PERCENT      &kp EXCLAMATION
-&trans            &trans                  &trans            &kp GRAVE                &kp LC(N)          &kp LS(LC(N))      &kp LC(Y)         &kp LC(Z)                                                            &kp LEFT_BRACKET
+&kp GRAVE         &trans                  &trans            &kp GRAVE                &kp LC(N)          &kp LS(LC(N))      &kp LC(Y)         &kp LC(Z)                                                            &kp LEFT_BRACKET
             >;
         };
 
