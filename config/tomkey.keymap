@@ -15,10 +15,10 @@
         shatdown: shatdown {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LG(D) &kp LA(F4)>;
+            bindings = <&kp LG(X) &kp U &kp U>;
             label = "SHATDOWN";
-            tap-ms = <1>;
-            wait-ms = <0>;
+            tap-ms = <5>;
+            wait-ms = <5>;
         };
     };
 
@@ -56,10 +56,10 @@
 
         default_layer {
             bindings = <
-&kp Q                  &kp W           &kp E         &kp R      &kp T                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_WIN A         &mt LEFT_ALT S  &lt 2 D       &kp F      &kp G        &mo 6              &kp HOME       &kp H        &kp J  &lt 2 K    &kp L    &mt MINUS LEFT_SHIFT
-&mt LCTRL Z            &kp X           &kp C         &kp V      &kp B        &kp LS(LG(S))      &kp END        &kp N        &kp M  &kp COMMA  &kp DOT  &mt LEFT_CONTROL SLASH
-&mt LEFT_SHIFT ESCAPE  &kp LEFT_WIN    &kp LEFT_ALT  &lt 5 TAB  &lt 3 ENTER  &lt 4 DEL          &kp BACKSPACE  &lt 3 SPACE                             &mt LEFT_SHIFT LS(INT1)
+&kp Q                  &kp W         &kp E         &kp R           &kp T                                          &kp Y        &kp U           &kp I      &kp O    &kp P
+&kp A                  &kp S         &lt 2 D       &mt LEFT_ALT F  &kp G        &mo 6              &kp HOME       &kp H        &mt LEFT_GUI J  &lt 2 K    &kp L    &mt LEFT_SHIFT MINUS
+&mt LCTRL Z            &kp X         &kp C         &kp V           &kp B        &kp LS(LG(S))      &kp END        &kp N        &kp M           &kp COMMA  &kp DOT  &mt LEFT_CONTROL SLASH
+&mt LEFT_SHIFT ESCAPE  &kp LEFT_WIN  &kp LEFT_ALT  &lt 5 TAB       &lt 3 ENTER  &lt 4 DEL          &kp BACKSPACE  &lt 3 SPACE                                      &mt LEFT_SHIFT LS(INT1)
             >;
         };
 
@@ -101,10 +101,10 @@
 
         FUNCTION {
             bindings = <
-&trans  &trans   &trans   &trans   &trans                      &trans  &kp F7  &kp F8  &kp F9  &trans
-&trans  &kp F10  &kp F11  &kp F12  &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &trans
-&trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &trans
-&trans  &trans   &trans   &trans   &trans  &trans      &trans  &trans                          &shatdown
+&trans  &trans         &trans         &trans     &trans                      &trans  &kp F7  &kp F8  &kp F9  &trans
+&trans  &kp F10        &kp F11        &kp F12    &trans  &trans      &trans  &trans  &kp F4  &kp F5  &kp F6  &trans
+&trans  &kp LC(LS(V))  &kp LC(LA(V))  &kp LG(V)  &trans  &trans      &trans  &trans  &kp F1  &kp F2  &kp F3  &trans
+&trans  &trans         &trans         &trans     &trans  &trans      &trans  &trans                          &shatdown
             >;
         };
 
