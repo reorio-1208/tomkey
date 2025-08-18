@@ -5,10 +5,10 @@
 
 / {
     macros {
-        atto: atto {
+        kakko: atto {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANGUAGE_2 &kp AT>;
+            bindings = <&kp LANG1 &kp RIGHT_BRACKET &kp BACKSLASH &kp ENTER &kp LEFT>;
             label = "ATTO";
         };
 
@@ -19,6 +19,20 @@
             label = "SHATDOWN";
             tap-ms = <5>;
             wait-ms = <5>;
+        };
+
+        marukakko: marukakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1 &kp LS(NUMBER_8) &kp LS(NUMBER_9) &kp ENTER &kp LEFT>;
+            label = "MARUKAKKO";
+        };
+
+        sumikakko: sumikakko {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LANG1 &kp LS(RIGHT_BRACKET) &kp LS(BACKSLASH) &kp ENTER &kp LEFT>;
+            label = "SUMIKAKKO";
         };
     };
 
@@ -74,10 +88,10 @@
 
         SCROLL {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans                      &trans  &trans            &kp LA(UP_ARROW)    &trans             &trans
-&trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(LEFT)      &kp LA(DOWN_ARROW)  &kp LA(RIGHT)      &trans
-&kp F12     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LC(LG(LEFT))  &trans              &kp LC(LG(RIGHT))  &trans
-&kp F12     &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                           &trans
+&kp ESCAPE  &trans  &trans  &trans  &trans                      &trans  &kp LC(LG(LEFT_ARROW))  &kp LA(UP_ARROW)  &kp LC(LG(RIGHT_ARROW))  &trans
+&trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(LEFT)            &kp LS(LC(T))     &kp LA(RIGHT)            &trans
+&kp F12     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kakko                  &marukakko        &sumikakko               &trans
+&kp F12     &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                     &trans
             >;
         };
 
@@ -92,10 +106,10 @@
 
         NUM {
             bindings = <
-&trans  &trans        &trans     &trans                &trans                         &trans          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
-&trans  &kp LS(SEMI)  &kp MINUS  &kp LS(SINGLE_QUOTE)  &kp SLASH  &trans      &trans  &kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
-&trans  &trans        &trans     &trans                &trans     &trans      &trans  &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
-&trans  &trans        &trans     &trans                &trans     &trans      &trans  &kp PERIOD                                                &trans
+&trans          &trans        &trans     &trans                &trans                         &trans          &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &trans
+&trans          &kp LS(SEMI)  &kp MINUS  &kp LS(SINGLE_QUOTE)  &kp SLASH  &trans      &trans  &kp UNDERSCORE  &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &trans
+&kp UNDERSCORE  &trans        &trans     &trans                &trans     &trans      &trans  &kp NUMBER_0    &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_0
+&trans          &trans        &trans     &trans                &trans     &trans      &trans  &kp PERIOD                                                &trans
             >;
         };
 
