@@ -31,8 +31,15 @@
         sumikakko: sumikakko {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LANG1 &kp LS(RIGHT_BRACKET) &kp LS(BACKSLASH) &kp ENTER &kp LEFT>;
+            bindings = <&kp LANG1 &kp RIGHT_BRACKET &kp BACKSLASH &kp SPACE>;
             label = "SUMIKAKKO";
+        };
+
+        allkesu: allkesu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp END &kp LS(LC(HOME))>;
+            label = "ALLKESU";
         };
     };
 
@@ -97,7 +104,7 @@
 
         ARROW {
             bindings = <
-&kp LC(W)         &kp LC(LS(TAB))         &kp LG(UP_ARROW)  &kp LC(TAB)              &kp LC(T)                                               &kp LC(NUMBER_1)  &kp LS(LC(HOME))  &kp UP_ARROW    &kp LS(LC(END))  &kp EQUAL
+&kp LC(W)         &kp LC(LS(TAB))         &kp LG(UP_ARROW)  &kp LC(TAB)              &kp LC(T)                                               &kp LC(NUMBER_1)  &kp LS(LC(HOME))  &kp UP_ARROW    &allkesu         &kp EQUAL
 &kp LS(LG(LEFT))  &kp LA(LG(LEFT_ARROW))  &kp LG(D)         &kp LG(LA(RIGHT_ARROW))  &kp LS(LG(RIGHT))  &trans             &kp SINGLE_QUOTE  &kp SEMI          &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(EQUAL)
 &kp LA(F4)        &kp LC(PAGE_UP)         &kp LS(LC(T))     &kp LC(PAGE_DOWN)        &kp LA(D)          &trans             &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp HASH        &kp PERCENT      &kp EXCLAMATION
 &kp LA(F4)        &trans                  &trans            &kp LG(E)                &kp LC(N)          &kp LS(LC(N))      &kp LC(Y)         &kp LC(Z)                                                            &kp LEFT_BRACKET
