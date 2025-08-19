@@ -53,12 +53,12 @@
 
         l-shift {
             bindings = <&mt LANG2 LANG2>;
-            key-positions = <19 20>;
+            key-positions = <20 19>;
         };
 
         eisu {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <12 12 13>;
+            bindings = <&kp LEFT_SHIFT>;
+            key-positions = <20 33>;
         };
 
         esc {
@@ -67,7 +67,7 @@
         };
 
         shift {
-            bindings = <&kp LEFT_GUI>;
+            bindings = <&kp LEFT_ALT>;
             key-positions = <12 11>;
         };
 
