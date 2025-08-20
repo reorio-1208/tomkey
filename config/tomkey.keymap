@@ -57,7 +57,7 @@
         };
 
         eisu {
-            bindings = <&kp LEFT_SHIFT>;
+            bindings = <&kp LEFT_GUI>;
             key-positions = <20 33>;
         };
 
