@@ -106,28 +106,28 @@
 
         MOUSE {
             bindings = <
-&trans     &trans        &trans            &trans          &trans                      &trans  &trans    &trans  &trans    &trans
-&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
-&trans     &trans        &trans            &trans          &trans  &trans      &trans  &trans  &trans    &trans  &trans    &mkp MB3
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND  &kp LEFT_SHIFT  &trans  &trans      &trans  &trans                              &trans
+&trans  &trans  &trans  &trans  &trans                      &trans  &trans    &trans  &trans    &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &mkp MB1  &trans  &mkp MB2  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans  &trans    &trans  &trans    &mkp MB3
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                              &trans
             >;
         };
 
         SCROLL {
             bindings = <
-&kp ESCAPE  &trans          &msc SCRL_UP    &trans           &trans                      &trans  &kp LC(LG(LEFT_ARROW))  &kp LA(UP_ARROW)  &kp LC(LG(RIGHT_ARROW))  &trans
-&trans      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans      &trans  &trans  &kp LA(LEFT)            &kp LS(LC(T))     &kp LA(RIGHT)            &trans
-&kp F12     &trans          &trans          &trans           &trans  &trans      &trans  &trans  &kakko                  &marukakko        &sumikakko               &trans
-&kp F12     &trans          &trans          &trans           &trans  &trans      &trans  &trans                                                                     &trans
+&trans  &trans          &msc SCRL_UP    &trans           &trans                      &trans  &kp LC(LG(LEFT_ARROW))  &kp LA(UP_ARROW)  &kp LC(LG(RIGHT_ARROW))  &trans
+&trans  &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans      &trans  &trans  &kp LA(LEFT)            &kp LS(LC(T))     &kp LA(RIGHT)            &trans
+&trans  &mmv MOVE_LEFT  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &trans  &trans      &trans  &trans  &kakko                  &marukakko        &sumikakko               &trans
+&trans  &trans          &trans          &trans           &trans  &trans      &trans  &trans                                                                     &trans
             >;
         };
 
         ARROW {
             bindings = <
-&kp LC(KP_PLUS)   &kp LC(PAGE_UP)     &kp LG(UP_ARROW)  &kp LC(PAGE_DOWN)       &trans                                                    &kp LC(NUMBER_1)  &kp LS(LC(HOME))  &kp UP_ARROW    &allkesu         &kp EQUAL
-&kp LS(LG(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)     &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT))  &trans               &kp SEMI          &kp APOSTROPHE    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(EQUAL)
-&kp LS(LG(W))     &kp LC(W)           &kp LG(D)         &kp LC(T)               &kp LA(D)          &kp PRINTSCREEN      &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp HASH        &kp PERCENT      &kp EXCLAMATION
-&kp LA(F4)        &trans              &trans            &kp LG(E)               &kp LC(N)          &kp LS(LC(N))        &kp LC(Y)         &kp LC(Z)                                                            &kp LEFT_BRACKET
+&kp LC(KP_PLUS)   &kp LC(PAGE_UP)     &kp LG(UP_ARROW)  &kp LC(PAGE_DOWN)       &trans                                                        &kp LC(NUMBER_1)  &kp LS(LC(HOME))  &kp UP_ARROW    &allkesu         &kp EQUAL
+&kp LS(LG(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)     &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT))  &trans                   &kp SEMI          &kp APOSTROPHE    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(EQUAL)
+&kp LS(LG(S))     &kp LC(W)           &kp LG(D)         &kp LC(T)               &kp LA(D)          &kp LA(PRINTSCREEN)      &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp HASH        &kp PERCENT      &kp EXCLAMATION
+&kp LA(F4)        &trans              &trans            &kp LG(E)               &kp LC(N)          &kp LS(LC(N))            &kp LC(Y)         &kp LC(Z)                                                            &kp LEFT_BRACKET
             >;
         };
 
