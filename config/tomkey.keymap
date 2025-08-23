@@ -57,8 +57,8 @@
         };
 
         eisu {
-            bindings = <&kp LEFT_GUI>;
-            key-positions = <20 33>;
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <20 21>;
         };
 
         esc {
@@ -73,12 +73,17 @@
 
         win {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <11 22>;
+            key-positions = <11 10>;
         };
 
         enter {
             bindings = <&kp ENTER>;
             key-positions = <12 13>;
+        };
+
+        leftclik {
+            bindings = <&mkp MB2>;
+            key-positions = <11 13>;
         };
     };
 
@@ -105,18 +110,18 @@
 
         SCROLL {
             bindings = <
-&kp ESCAPE  &trans  &trans  &trans  &trans                      &trans  &kp LC(LG(LEFT_ARROW))  &kp LA(UP_ARROW)  &kp LC(LG(RIGHT_ARROW))  &trans
-&trans      &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kp LA(LEFT)            &kp LS(LC(T))     &kp LA(RIGHT)            &trans
-&kp F12     &trans  &trans  &trans  &trans  &trans      &trans  &trans  &kakko                  &marukakko        &sumikakko               &trans
-&kp F12     &trans  &trans  &trans  &trans  &trans      &trans  &trans                                                                     &trans
+&kp ESCAPE  &trans          &msc SCRL_UP    &trans           &trans                      &trans  &kp LC(LG(LEFT_ARROW))  &kp LA(UP_ARROW)  &kp LC(LG(RIGHT_ARROW))  &trans
+&trans      &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_RIGHT  &trans  &trans      &trans  &trans  &kp LA(LEFT)            &kp LS(LC(T))     &kp LA(RIGHT)            &trans
+&kp F12     &trans          &trans          &trans           &trans  &trans      &trans  &trans  &kakko                  &marukakko        &sumikakko               &trans
+&kp F12     &trans          &trans          &trans           &trans  &trans      &trans  &trans                                                                     &trans
             >;
         };
 
         ARROW {
             bindings = <
-&trans            &kp LC(LS(TAB))     &kp LG(UP_ARROW)  &kp LC(TAB)             &trans                                                  &kp LC(NUMBER_1)  &kp LS(LC(HOME))  &kp UP_ARROW    &allkesu         &kp EQUAL
-&kp LS(LG(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)     &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT))  &trans             &kp SINGLE_QUOTE  &kp SEMI          &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(EQUAL)
-&kp LC(W)         &kp LC(PAGE_UP)     &kp LG(D)         &kp LC(PAGE_DOWN)       &kp LA(D)          &trans             &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp HASH        &kp PERCENT      &kp EXCLAMATION
+&trans            &kp LC(PAGE_UP)     &kp LG(UP_ARROW)  &kp LC(PAGE_DOWN)       &trans                                                  &kp LC(NUMBER_1)  &kp LS(LC(HOME))  &kp UP_ARROW    &allkesu         &kp EQUAL
+&kp LS(LG(LEFT))  &kp LG(LEFT_ARROW)  &kp LG(RIGHT)     &kp LG(LC(LEFT_ARROW))  &kp LG(LC(RIGHT))  &trans             &kp SEMI          &kp APOSTROPHE    &kp LEFT_ARROW    &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp LS(EQUAL)
+&kp LC(W)         &kp LA(LEFT)        &kp LA(RIGHT)     &kp LA(RIGHT)           &kp LA(D)          &trans             &kp LS(NUMBER_7)  &kp LS(NUMBER_2)  &kp LS(NUMBER_6)  &kp HASH        &kp PERCENT      &kp EXCLAMATION
 &kp LA(F4)        &trans              &trans            &kp LG(E)               &kp LC(N)          &kp LS(LC(N))      &kp LC(Y)         &kp LC(Z)                                                            &kp LEFT_BRACKET
             >;
         };
